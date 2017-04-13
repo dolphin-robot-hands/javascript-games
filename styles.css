@@ -1,0 +1,164 @@
+body {
+  background-color: black;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+li {
+  list-style-type: none;
+  padding: 5px;
+}
+
+table {
+  border-color: grey;
+  background-color: grey;
+}
+
+td {
+  border-style: solid;
+  border-color: #fcfcfc;
+  border-width: 4px;
+  background-color: #fcfcfc;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  width: 450;
+  float: none;
+  cursor: default;
+}
+
+.home {
+  color: white;
+  font-size: 50;
+}
+
+.endgame {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin: 20px;
+  color:  white;
+  height: 40px;
+}
+
+/* index */
+
+.index-container .container {
+  width: 300px;
+  text-align: center;
+}
+
+
+/* minesweeper */
+
+.minesweeper-container .endgame {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin: 20px;
+  color:  white;
+  height: 40px;
+}
+
+.minesweeper-container [class *= "hidden"] {
+  background-color: grey;
+  color: transparent;
+  white-space: nowrap;
+  overflow: hidden;
+  border-style: outset;
+}
+
+.minesweeper-container .flag {
+  color: black;
+}
+
+.minesweeper-container .newgame {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+}
+
+/* snake */
+.snake-container table {
+  border-collapse: collapse;
+}
+
+.snake-container td {
+  border-color: darkgrey;
+  border-width: 2px;
+  background-color: grey;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+}
+
+.snake-container .container  {
+  margin-top: 20px;
+  width: 660;
+}
+
+.snake-container .snake {
+  background-color: #efefef;
+}
+
+.snake-container .food {
+  background-color: black;
+}
+
+.snake-container .score {
+  position: absolute;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+}
+
+
+/* tic-tac-toe */
+
+.tic-container table {
+  border-collapse: collapse;
+}
+
+.tic-container td {
+  border-color: darkgrey;
+  border-width: 2px;
+  background-color: grey;
+  width: 200px;
+  height: 200px;
+  border-radius: 3px;
+  font-size: 80px;
+}
+
+.tic-container .container {
+  margin-top: 20px;
+  width: 620;
+}
+
+.tic-container .hidden {
+  background-color: black;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
