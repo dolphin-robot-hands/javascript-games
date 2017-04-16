@@ -123,6 +123,10 @@ a {
   background-color: #efefef;
 }
 
+.snake-container .snakehead {
+  background-color: #c41b1b;
+}
+
 .snake-container .food {
   background-color: black;
 }
