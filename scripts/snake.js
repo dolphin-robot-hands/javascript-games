@@ -55,13 +55,9 @@ var snake = {
       this.state[i] = $.extend(true,[],this.lastState[i-1]);
     }
     changeCell(this.state,"snake");
+    // update head of snake
+    changeCell(this.state.slice(0,1), "snakehead");
 
-    headId = "#x"+this.state[0]["0"]+"y"+this.state[0]["1"];
-    $(headId).attr('class','snakehead');
-
-    //var head = this.state[0];
-    //changeCell(head, "redsnake");
-    //console.log(head);
   },
   //adds cells to snake
   grow: function() {
